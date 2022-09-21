@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "lede": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663755179,
+        "narHash": "sha256-BG8rSX2SQz8eb5RYy2PWiT3N+1izzyIFbL8SLR4dQF0=",
+        "owner": "coolsnowwolf",
+        "repo": "lede",
+        "rev": "4f056f8ef3f929dad0be53ec0ba24037197e437a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "coolsnowwolf",
+        "repo": "lede",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1663729508,
+        "narHash": "sha256-Is6LEujPbMH6F4b8TfIr0BmqW6mUIaxZO1RnGduczAo=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "490f918fe65e5f53c48e509582f489e1e2d522e7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable-small",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "lede": "lede",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
