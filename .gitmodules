@@ -1,0 +1,4 @@
+[submodule "lede"]
+	path = lede
+	url = https://github.com/coolsnowwolf/lede.git
+	shadow = true
