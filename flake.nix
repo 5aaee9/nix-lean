@@ -16,6 +16,6 @@
   in
   {
     packages.x86_64-linux = import ./packages { pkgs = crossPackage "x86_64-linux"; inherit lede; };
-    packages.aarch64-linux = import ./packages { pkgs = systemPackage "aarch64-linux"; };
+    packages.aarch64-linux = import ./packages { pkgs = systemPackage "aarch64-linux"; inherit lede; };
   };
 }
