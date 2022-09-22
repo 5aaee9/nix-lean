@@ -11,6 +11,10 @@ buildUBoot {
   defconfig = "r66s-rk3568_defconfig";
   extraMeta.platforms = [ "aarch64-linux" ];
   filesToInstall = [ "idbloader.img" "u-boot.itb" ];
+  extraConfig = ''
+    CONFIG_DISTRO_DEFAULTS=y
+  '';
+  
   postConfigure = ''
     cp ${rkbin}/bin/rk35/rk3568_ddr_1560MHz_v1.13.bin ram_init.bin
   '';
