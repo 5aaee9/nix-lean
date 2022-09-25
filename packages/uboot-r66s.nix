@@ -13,8 +13,9 @@ buildUBoot {
   filesToInstall = [ "idbloader.img" "u-boot.itb" ];
   extraConfig = ''
     CONFIG_DISTRO_DEFAULTS=y
+    CONFIG_BOOTDELAY=5
   '';
-  
+
   postConfigure = ''
     cp ${rkbin}/bin/rk35/rk3568_ddr_1560MHz_v1.13.bin ram_init.bin
   '';
